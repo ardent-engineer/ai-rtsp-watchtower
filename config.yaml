@@ -1,0 +1,29 @@
+# Application settings
+device: "auto"  # 'auto' will let the app decide, or specify 'cpu', 'cuda:0'
+
+# File paths
+paths:
+  yolo_dir: "yolov5"
+  model: "yolov5s.pt"
+  sources_csv: "data/sources.csv"
+  roi_file: "data/rois.json"
+  priority_file: "data/priority.json"
+  assets:
+    images:
+      logo: "assets/images/logo4.png"
+      welcome_bg: "assets/images/ai.webp"
+      no_signal: "assets/images/no_signal.png"
+    sounds:
+      alarm_0: "assets/sounds/alarm0.mp3"
+      alarm_1: "assets/sounds/alarm1.mp3"
+      alarm_2: "assets/sounds/alarm2.mp3"
+
+# Detection settings
+default_confidence_threshold: 0.45
+frames_per_detection: 3
+
+# Alarm settings
+alarm_settings:
+  alarm_cooldown_ms: 1000
+  grey_zone_ms: 0
+  black_zone_ms: 25000
