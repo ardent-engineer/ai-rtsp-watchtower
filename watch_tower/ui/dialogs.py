@@ -374,7 +374,7 @@ class LoginDialog(QtWidgets.QDialog):
         return super().eventFilter(source, event)
 
     def login(self):
-        if self.password_input.text() == "paf123":
+        if self.password_input.text() == "123":
             self.state = 1
             self.accept()
         else:
