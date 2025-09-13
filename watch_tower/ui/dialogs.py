@@ -17,7 +17,7 @@ class WelcomePage(QDialog):
     def __init__(self, config, parent=None):
         super().__init__(parent)
         self.config = config
-        self.setWindowTitle("Welcome to Smart Sentry")
+        self.setWindowTitle("Welcome to Watch Tower")
         self.setStyleSheet(f"""
             QDialog {{
                 border-image: url('{self.config['paths']['assets']['images']['welcome_bg']}') 0 0 0 0 stretch stretch;
@@ -332,7 +332,7 @@ class LoginDialog(QtWidgets.QDialog):
         self.logo_label.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(self.logo_label)
 
-        title = QtWidgets.QLabel("Smart Sentry")
+        title = QtWidgets.QLabel("Watch Tower")
         title.setAlignment(QtCore.Qt.AlignCenter)
         title.setStyleSheet("font-size: 28px; color: #ffcc00;")
         layout.addWidget(title)

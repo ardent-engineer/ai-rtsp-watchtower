@@ -1,5 +1,5 @@
 display_ips,ips,threshold
-fp,rtsp://user:pass@192.168.1.50:554/stream1,0.5
-fp,rtsp://user:pass@192.168.1.50:554/stream1,0.5
-fp,rtsp://user:pass@192.168.1.50:554/stream1,0.5
-fp,rtsp://user:pass@192.168.1.50:554/stream1,0.5
+fp,cars.mp4,0.5
+fr,cars2.mp4,0.5
+fl,people.mp4,0.5
+fq,people2.mp4,0.5

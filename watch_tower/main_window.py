@@ -73,7 +73,7 @@ class MainWindow(QMainWindow):
             sys.exit(1)
 
     def setup_window(self):
-        self.setWindowTitle("Smart Sentry")
+        self.setWindowTitle("Watch Tower - AI Surveillance System")
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
         self.main_layout = QVBoxLayout(self.central_widget)

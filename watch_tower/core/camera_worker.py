@@ -4,10 +4,10 @@ import torch
 import cv2
 from mss import mss
 from PIL import Image
-
+import time
 from PyQt5.QtCore import QThread, pyqtSignal, QSize
 from PyQt5.QtGui import QImage
-
+from PyQt5.QtWidgets import QApplication
 # Relative import to get the AsyncRead class from the utils module
 from ..utils.async_read import AsyncRead
 
@@ -143,6 +143,7 @@ class CaptureIpCameraFramesWorker(QThread):
                         cv_rgb_image = self.detect(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
                         qt_image = QImage(cv_rgb_image.data, cv_rgb_image.shape[1], cv_rgb_image.shape[0], cv_rgb_image.shape[1]*3, QImage.Format_RGB888)
                         self.ImageUpdated.emit(qt_image)
+                        QApplication.processEvents()
             except Exception as e:
                 print(f"Monitor: {self.screen} is not available! Error: {e}")
                 img = self.no_signal_img
@@ -167,11 +168,14 @@ class CaptureIpCameraFramesWorker(QThread):
             
             self.cap = AsyncRead(self.cap)
             self.state_stream = True
+            i =  0
             while self.__thread_active:
+
                 if not self.__thread_pause:
                     
                     ret, frame = self.cap.read(wait=True, timeout=1.0) # Use a 1-second timeout
-
+                    print(i)
+                    i+=1
                     if self.__thread_active is False: # Add an immediate check after the wait
                         break
 
@@ -180,6 +184,7 @@ class CaptureIpCameraFramesWorker(QThread):
                         cv_rgb_image = self.detect(frame)
                         qt_image = QImage(cv_rgb_image.data, cv_rgb_image.shape[1], cv_rgb_image.shape[0], cv_rgb_image.shape[1]*3, QImage.Format_RGB888)
                         self.ImageUpdated.emit(qt_image)
+                        QApplication.processEvents()
                     else:
                         if self.state_stream is False:
                             break
