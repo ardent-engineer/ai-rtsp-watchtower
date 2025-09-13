@@ -379,7 +379,7 @@ class MainWindow(QMainWindow):
         screen_size = QDesktopWidget().screenGeometry()
         width, height = screen_size.width(), screen_size.height()
         size_map = {
-            '2x2': ((width // 2) - 50, (height // 2) - 70),
+            '2x2': ((width // 2) - 150, (height // 2) - 150),
             '3x3': ((width // 3) - 50, (height // 3) - 55),
             '4x4': ((width // 4) - 50, (height // 4) - 40)
         }
