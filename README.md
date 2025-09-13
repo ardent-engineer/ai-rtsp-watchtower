@@ -10,9 +10,9 @@ A high-performance, AI-powered surveillance application that processes multiple 
 ## Key Features
 
 -   **Lag-Free Concurrent Processing**: Utilizes a multi-threaded architecture where each camera feed is processed independently. This prevents slow or disconnected streams from impacting the performance of others, ensuring a responsive UI with no video lag buildup.
+![alt text](illustrations/graph.png)
 -   **Multi-Source Video**: Supports RTSP streams, local video files, and direct screen captures.
 -   **Real-Time AI Detection**: Detects Persons, Vehicles, and Animals using a YOLOv5 model.
-![alt text](illustrations/graph.png)
 -   **Customizable Detection Zones**: Define specific Regions of Interest (ROI) and Exclusion Regions (ER) for precise monitoring.
 ![alt text](<illustrations/roi-selector.png>)
 
@@ -20,10 +20,6 @@ A high-performance, AI-powered surveillance application that processes multiple 
 -   **Priority-Based Audible Alerts**: Assign different alarm sounds based on camera priority.
 -   **Dynamic Grid View**: Switch between 2x2, 3x3, and 4x4 layouts on the fly.
 -   **Reduced False Alarms**: Implements logic to reduce false alarms.
--   **Custom Region Definition**: Define Regions-of-Interest and Exclusion Regions.
-![alt text](<illustrations/roi-selector.png>)
-
-![alt text](<illustrations/roi-selected.png>)
 ## Quick Setup
 
 Getting started is designed to be as simple as possible.
