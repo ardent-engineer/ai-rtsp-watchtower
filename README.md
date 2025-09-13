@@ -5,21 +5,21 @@
 
 A high-performance, AI-powered surveillance application that processes multiple camera feeds concurrently without lag. Built with Python, PyQt5, and YOLOv5.
 
-![alt text](<Screenshot from 2025-09-13 07-13-52.png>)
+![alt text](<illustrations/app.png>)
 
 ## Key Features
 
 -   **Lag-Free Concurrent Processing**: Utilizes a multi-threaded architecture where each camera feed is processed independently. This prevents slow or disconnected streams from impacting the performance of others, ensuring a responsive UI with no video lag buildup.
 -   **Multi-Source Video**: Supports RTSP streams, local video files, and direct screen captures.
 -   **Real-Time AI Detection**: Detects Persons, Vehicles, and Animals using a YOLOv5 model.
-![alt text](image.png)
+![alt text](illustrations/graph.png)
 -   **Customizable Detection Zones**: Define specific Regions of Interest (ROI) and Exclusion Regions (ER) for precise monitoring.
 -   **Priority-Based Audible Alerts**: Assign different alarm sounds based on camera priority.
 -   **Dynamic Grid View**: Switch between 2x2, 3x3, and 4x4 layouts on the fly.
 -   **Custom Region Definition**: Define Regions-of-Interest and Exclusion Regions.
-![alt text](<Screenshot from 2025-09-13 07-20-33.png>)
+![alt text](<illustrations/roi-selector.png>)
 
-![alt text](<Screenshot from 2025-09-13 07-21-24.png>)
+![alt text](<illustrations/roi-selected.png>)
 -   **Reduced False Alarms**: Implements logic to reduce false alarms.
 
 ## Quick Setup
