@@ -14,14 +14,16 @@ A high-performance, AI-powered surveillance application that processes multiple 
 -   **Real-Time AI Detection**: Detects Persons, Vehicles, and Animals using a YOLOv5 model.
 ![alt text](illustrations/graph.png)
 -   **Customizable Detection Zones**: Define specific Regions of Interest (ROI) and Exclusion Regions (ER) for precise monitoring.
+![alt text](<illustrations/roi-selector.png>)
+
+![alt text](<illustrations/roi-selected.png>)
 -   **Priority-Based Audible Alerts**: Assign different alarm sounds based on camera priority.
 -   **Dynamic Grid View**: Switch between 2x2, 3x3, and 4x4 layouts on the fly.
+-   **Reduced False Alarms**: Implements logic to reduce false alarms.
 -   **Custom Region Definition**: Define Regions-of-Interest and Exclusion Regions.
 ![alt text](<illustrations/roi-selector.png>)
 
 ![alt text](<illustrations/roi-selected.png>)
--   **Reduced False Alarms**: Implements logic to reduce false alarms.
-
 ## Quick Setup
 
 Getting started is designed to be as simple as possible.
