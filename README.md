@@ -1,6 +1,3 @@
-Of course. Here is a concise and direct `README.md` that emphasizes the easy setup and highlights the crucial concurrency feature. It's designed to get someone up and running as quickly as possible.
-
-Just copy the content below and replace your entire `README.md` file.
 
 ---
 
