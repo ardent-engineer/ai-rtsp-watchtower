@@ -21,7 +21,7 @@ Getting started is designed to be as simple as possible.
 ### 1. Clone This Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/ardent-engineer/ai-rtsp-watchtower.git
 cd intelligent-watch-tower
 ```
 
@@ -36,7 +36,7 @@ git clone https://github.com/ultralytics/yolov5.git
 
 ### 3. Install Dependencies & Configure
 
-And... bam! Install the requirements and set up your cameras.
+Install the requirements and set up your cameras.
 
 ```bash
 # (Optional but Recommended) Create and activate a virtual environment
