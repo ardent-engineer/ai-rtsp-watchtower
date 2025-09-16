@@ -16,7 +16,7 @@ A high-performance, AI-powered surveillance application that processes multiple 
 -   **Customizable Detection Zones**: Define specific Regions of Interest (ROI) and Exclusion Regions (ER) for precise monitoring.
 ![alt text](<illustrations/roi-selector.png>)
 
-![alt text](<illustrations/roi-selected.png>)
+![alt text](<illustrations/roiselected.png>)
 -   **Priority-Based Audible Alerts**: Assign different alarm sounds based on camera priority.
 -   **Dynamic Grid View**: Switch between 2x2, 3x3, and 4x4 layouts on the fly.
 -   **Reduced False Alarms**: It reduces transient artifacts by forcing a detection to **last longer than a delay $T_{\text{grey}}$** before it can trigger, and then blocking repeats with a **cooldown $T_{\text{cooldown}}$**. So short flickers (like wind-moved trees) disappear before the delay ends and never reach the alarm stage.
